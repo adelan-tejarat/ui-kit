@@ -13,11 +13,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc:
-  fluent_ui: ^4.9.2
-  cupertino_icons: ^1.0.8
-  mocktail: ^1.0.4
-  widgetbook: ^3.20.2
-  widgetbook_annotation: ^3.9.0
   intl: ^0.20.2
   flutter_localizations:
     sdk: flutter
@@ -28,7 +23,6 @@ dev_dependencies:
   flutter_lints: ^4.0.0
   build_runner: ^2.4.4
   flutter_gen_runner:
-  widgetbook_generator: ^3.9.0
 
 flutter_gen:
   output: lib/src/core/utils/gen/assets # Optional (default: lib/gen/)
@@ -40,17 +34,11 @@ flutter:
   assets:
     - assets/fonts/
   fonts:
-    - family: IranSansMobile_faNum_Regular
+    - family: IRANSansXFaNum
       fonts:
-        - asset: assets/fonts/IRANSansMobile(FaNum).ttf
-          weight: 100
-        - asset: assets/fonts/IRANSansMobile(FaNum).ttf
-          weight: 300
-        - asset: assets/fonts/IRANSansMobile(FaNum).ttf
+        - asset: assets/fonts/IRANSansXFaNum_RegularD4.ttf
           weight: 400
-        - asset: assets/fonts/IRANSansMobile(FaNum).ttf
+        - asset: assets/fonts/IRANSansXFaNum_MediumD4.ttf
           weight: 500
-        - asset: assets/fonts/IRANSansMobile(FaNum).ttf
-          weight: 600
-        - asset: assets/fonts/IRANSansMobile(FaNum).ttf
+        - asset: assets/fonts/IRANSansXFaNum_BoldD4.ttf
           weight: 700

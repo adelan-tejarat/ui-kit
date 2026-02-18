@@ -1,1 +1,0 @@
-enum ButtonIconState { withIcon, withoutIcon }

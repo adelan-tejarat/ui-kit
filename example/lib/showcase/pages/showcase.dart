@@ -3,6 +3,7 @@ import 'package:vamstreet_components/src/core/constants/dimens.dart';
 import 'package:vamstreet_components/src/core/themes/app_colors.dart';
 import 'package:vamstreet_components/src/core/themes/radius.dart';
 import 'package:vamstreet_components/src/core/themes/typography.dart';
+import 'package:vamstreet_components_example/showcase/pages/selectable_buttons_page.dart';
 
 // ایمپورت پیج‌ها
 import 'blur_page.dart';
@@ -19,6 +20,13 @@ class ShowCaseApp extends StatelessWidget {
 
   // لیست تمام صفحات برای نمایش
   final List<ShowcasePage> _pages = [
+    ShowcasePage(
+      title: 'Selectable Buttons',
+      subtitle: 'Radio-like selectable component with 2 sizes and 4 states',
+      icon: Icons.radio_button_checked,
+      color: const Color(AppColors.amber600),
+      page: const RadioButtonsPage(),
+    ),
     ShowcasePage(
       title: 'Blur Effects',
       subtitle: 'Blur values from none to 3xl',

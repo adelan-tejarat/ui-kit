@@ -23,3 +23,5 @@ export 'src/core/utils/gen/assets/assets.gen.dart';
 // Features
 export 'src/features/buttons/button_widget.dart';
 export 'src/features/buttons/icon_button_widget.dart';
+export 'src/features/selectable/selectable_button_widget.dart';
+export 'src/features/selectable/core/selectable_size.dart';

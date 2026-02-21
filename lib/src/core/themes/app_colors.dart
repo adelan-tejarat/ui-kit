@@ -130,3 +130,4 @@ class AppColors {
   static const int pink900 = 0xFF861043;
   static const int pink950 = 0xFF510424;
 }
+

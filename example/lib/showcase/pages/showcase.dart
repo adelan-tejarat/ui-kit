@@ -6,6 +6,8 @@ import 'package:vamstreet_components/src/core/themes/typography.dart';
 
 // ایمپورت پیج‌ها
 import 'blur_page.dart';
+import 'colors_page.dart';
+import 'icon_page.dart';
 import 'radius_page.dart';
 import 'typography_page.dart';
 import 'opacity_page.dart';
@@ -21,42 +23,56 @@ class ShowCaseApp extends StatelessWidget {
       title: 'Blur Effects',
       subtitle: 'Blur values from none to 3xl',
       icon: Icons.blur_circular,
-      color: AppColors.violet500,
+      color: const Color(AppColors.violet500),
       page: const BlurPage(),
+    ),
+    ShowcasePage(
+      title: 'Colors', // اضافه کردن صفحه جدید
+      subtitle: 'Complete color system',
+      icon: Icons.color_lens,
+      color: const Color(AppColors.brand500),
+      page: const ColorsPage(),
+    ),
+    ShowcasePage(
+      title: 'Icons',
+      subtitle: 'SVG icons library',
+      icon: Icons.emoji_emotions,
+      color: const Color(AppColors.violet500),
+      page: const IconsPage(), // اضافه کردن صفحه جدید
     ),
     ShowcasePage(
       title: 'Border Radius',
       subtitle: 'Complete radius scale',
       icon: Icons.square_rounded,
-      color: AppColors.sky500,
+      color: const Color(AppColors.sky500),
       page: const RadiusPage(),
     ),
     ShowcasePage(
       title: 'Typography',
       subtitle: 'Text styles and fonts',
       icon: Icons.text_fields,
-      color: AppColors.green500,
+      color: const Color(AppColors.green500),
       page: const TypographyPage(),
     ),
     ShowcasePage(
       title: 'Opacity',
       subtitle: 'Opacity values and utilities',
       icon: Icons.opacity,
-      color: AppColors.amber500,
+      color: const Color(AppColors.amber500),
       page: const OpacityPage(),
     ),
     ShowcasePage(
       title: 'Buttons',
       subtitle: 'Button styles and states',
       icon: Icons.smart_button,
-      color: AppColors.pink500,
+      color: const Color(AppColors.pink500),
       page: const ButtonsPage(),
     ),
     ShowcasePage(
       title: 'Inputs',
       subtitle: 'Form inputs and fields',
       icon: Icons.input,
-      color: AppColors.brand500,
+      color: const Color(AppColors.brand500),
       page: const InputsPage(),
     ),
   ];
@@ -64,7 +80,7 @@ class ShowCaseApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.neutral50,
+      backgroundColor: const Color(AppColors.neutral50),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,9 +97,12 @@ class ShowCaseApp extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(Dimens.px16), // کاهش از 24 به 16
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: const Color(AppColors.white),
         border: Border(
-          bottom: BorderSide(color: AppColors.neutral200, width: Dimens.px1),
+          bottom: BorderSide(
+            color: const Color(AppColors.neutral200),
+            width: Dimens.px1,
+          ),
         ),
       ),
       child: Column(
@@ -94,12 +113,12 @@ class ShowCaseApp extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(Dimens.px8), // کاهش از 12 به 8
                 decoration: BoxDecoration(
-                  color: AppColors.brand50,
+                  color: const Color(AppColors.brand50),
                   borderRadius: AppRadius.lgAll,
                 ),
                 child: Icon(
                   Icons.dashboard_customize,
-                  color: AppColors.brand600,
+                  color: const Color(AppColors.brand600),
                   size: Dimens.px20, // کاهش از 28 به 20
                 ),
               ),
@@ -110,8 +129,9 @@ class ShowCaseApp extends StatelessWidget {
                   children: [
                     Text(
                       'Vamstreet Components',
-                      style: AppTypography.textTheme.titleMedium?.copyWith( // تغییر به سایز کوچکتر
-                        color: AppColors.neutral900,
+                      style: AppTypography.textTheme.titleMedium?.copyWith(
+                        // تغییر به سایز کوچکتر
+                        color: const Color(AppColors.neutral900),
                         fontWeight: FontWeight.w600,
                       ),
                       maxLines: 1,
@@ -119,8 +139,9 @@ class ShowCaseApp extends StatelessWidget {
                     ),
                     Text(
                       'UI Kit Showcase',
-                      style: AppTypography.textTheme.bodySmall?.copyWith( // تغییر به سایز کوچکتر
-                        color: AppColors.neutral600,
+                      style: AppTypography.textTheme.bodySmall?.copyWith(
+                        // تغییر به سایز کوچکتر
+                        color: const Color(AppColors.neutral600),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
@@ -134,7 +155,7 @@ class ShowCaseApp extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(Dimens.px12), // کاهش از 16 به 12
             decoration: BoxDecoration(
-              color: AppColors.neutral100,
+              color: const Color(AppColors.neutral100),
               borderRadius: AppRadius.lgAll,
             ),
             child: Row(
@@ -142,14 +163,15 @@ class ShowCaseApp extends StatelessWidget {
                 Icon(
                   Icons.info_outline,
                   size: Dimens.px16, // کاهش از 20 به 16
-                  color: AppColors.neutral500,
+                  color: const Color(AppColors.neutral500),
                 ),
                 const SizedBox(width: Dimens.px8), // کاهش از 12 به 8
                 Expanded(
                   child: Text(
                     'Select a component to see its showcase',
-                    style: AppTypography.textTheme.labelMedium?.copyWith( // تغییر به سایز کوچکتر
-                      color: AppColors.neutral700,
+                    style: AppTypography.textTheme.labelMedium?.copyWith(
+                      // تغییر به سایز کوچکتر
+                      color: const Color(AppColors.neutral700),
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -170,7 +192,9 @@ class ShowCaseApp extends StatelessWidget {
         crossAxisCount: _getCrossAxisCount(context),
         crossAxisSpacing: Dimens.px8, // کاهش از 12 به 8
         mainAxisSpacing: Dimens.px8, // کاهش از 12 به 8
-        childAspectRatio: _getAspectRatio(context), // اضافه کردن aspect ratio داینامیک
+        childAspectRatio: _getAspectRatio(
+          context,
+        ), // اضافه کردن aspect ratio داینامیک
       ),
       itemCount: _pages.length,
       itemBuilder: (context, index) {
@@ -229,124 +253,135 @@ class _PageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-        builder: (context, constraints) {
-          // محاسبه سایز آیکون بر اساس عرض کارت
-          double iconSize = constraints.maxWidth * 0.25;
-          iconSize = iconSize.clamp(24, 40); // محدود کردن بین 24 و 40
+      builder: (context, constraints) {
+        // محاسبه سایز آیکون بر اساس عرض کارت
+        double iconSize = constraints.maxWidth * 0.25;
+        iconSize = iconSize.clamp(24, 40); // محدود کردن بین 24 و 40
 
-          return Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: onTap,
-              borderRadius: AppRadius.lgAll,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: AppColors.white,
-                  borderRadius: AppRadius.lgAll,
-                  border: Border.all(color: AppColors.neutral200, width: Dimens.px1),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Top colored section with icon
-                    Expanded(
-                      flex: 3,
-                      child: Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: page.color.withOpacity(0.1),
-                          borderRadius: AppRadius.lgAll,
-                        ),
-                        child: Stack(
-                          clipBehavior: Clip.none, // اجازه نمایش خارج از bounds
-                          children: [
-                            Positioned(
-                              right: -iconSize * 0.5, // تنظیم بر اساس سایز آیکون
-                              bottom: -iconSize * 0.5,
-                              child: Icon(
-                                page.icon,
-                                size: iconSize * 2.5, // آیکون پس‌زمینه بزرگ
-                                color: page.color.withOpacity(0.15),
-                              ),
-                            ),
-                            Center(
-                              child: Container(
-                                padding: EdgeInsets.all(iconSize * 0.3),
-                                decoration: BoxDecoration(
-                                  color: page.color.withOpacity(0.2),
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Icon(
-                                  page.icon,
-                                  size: iconSize,
-                                  color: page.color,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    // Bottom content section
-                    Expanded(
-                      flex: 2,
-                      child: Padding(
-                        padding: EdgeInsets.all(constraints.maxWidth * 0.03), // padding نسبی
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            FittedBox( // برای جلوگیری از overflow متن
-                              fit: BoxFit.scaleDown,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                page.title,
-                                style: AppTypography.textTheme.labelLarge?.copyWith(
-                                  color: AppColors.neutral900,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: Dimens.px2),
-                            FittedBox(
-                              fit: BoxFit.scaleDown,
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                page.subtitle,
-                                style: AppTypography.textTheme.labelSmall?.copyWith(
-                                  color: AppColors.neutral600,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: Dimens.px4),
-                            Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: constraints.maxWidth * 0.04,
-                                vertical: constraints.maxWidth * 0.01,
-                              ),
-                              decoration: BoxDecoration(
-                                color: page.color.withOpacity(0.1),
-                                borderRadius: AppRadius.fullAll,
-                              ),
-                              child: Text(
-                                'View →',
-                                style: AppTypography.textTheme.labelSmall?.copyWith(
-                                  color: page.color,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: constraints.maxWidth * 0.03, // فونت نسبی
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
+        return Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: onTap,
+            borderRadius: AppRadius.lgAll,
+            child: Container(
+              decoration: BoxDecoration(
+                color: const Color(AppColors.white),
+                borderRadius: AppRadius.lgAll,
+                border: Border.all(
+                  color: const Color(AppColors.neutral200),
+                  width: Dimens.px1,
                 ),
               ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Top colored section with icon
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: page.color.withOpacity(0.1),
+                        borderRadius: AppRadius.lgAll,
+                      ),
+                      child: Stack(
+                        clipBehavior: Clip.none, // اجازه نمایش خارج از bounds
+                        children: [
+                          Positioned(
+                            right: -iconSize * 0.5, // تنظیم بر اساس سایز آیکون
+                            bottom: -iconSize * 0.5,
+                            child: Icon(
+                              page.icon,
+                              size: iconSize * 2.5, // آیکون پس‌زمینه بزرگ
+                              color: page.color.withOpacity(0.15),
+                            ),
+                          ),
+                          Center(
+                            child: Container(
+                              padding: EdgeInsets.all(iconSize * 0.3),
+                              decoration: BoxDecoration(
+                                color: page.color.withOpacity(0.2),
+                                shape: BoxShape.circle,
+                              ),
+                              child: Icon(
+                                page.icon,
+                                size: iconSize,
+                                color: page.color,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  // Bottom content section
+                  Expanded(
+                    flex: 2,
+                    child: Padding(
+                      padding: EdgeInsets.all(
+                        constraints.maxWidth * 0.03,
+                      ), // padding نسبی
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FittedBox(
+                            // برای جلوگیری از overflow متن
+                            fit: BoxFit.scaleDown,
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              page.title,
+                              style: AppTypography.textTheme.labelLarge
+                                  ?.copyWith(
+                                    color: const Color(AppColors.neutral900),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                            ),
+                          ),
+                          const SizedBox(height: Dimens.px2),
+                          FittedBox(
+                            fit: BoxFit.scaleDown,
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              page.subtitle,
+                              style: AppTypography.textTheme.labelSmall
+                                  ?.copyWith(
+                                    color: const Color(AppColors.neutral600),
+                                  ),
+                            ),
+                          ),
+                          const SizedBox(height: Dimens.px4),
+                          Container(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: constraints.maxWidth * 0.04,
+                              vertical: constraints.maxWidth * 0.01,
+                            ),
+                            decoration: BoxDecoration(
+                              color: page.color.withOpacity(0.1),
+                              borderRadius: AppRadius.fullAll,
+                            ),
+                            child: Text(
+                              'View →',
+                              style: AppTypography.textTheme.labelSmall
+                                  ?.copyWith(
+                                    color: page.color,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize:
+                                        constraints.maxWidth *
+                                        0.03, // فونت نسبی
+                                  ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          );
-        }
+          ),
+        );
+      },
     );
   }
 }

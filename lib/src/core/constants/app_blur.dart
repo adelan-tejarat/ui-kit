@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/widgets.dart';
-import 'package:vamstreet_components/src/core/utils/blur_utils.dart' show BlurUtils;
+import 'package:vamstreet_components/src/core/blur/blur_utils.dart' show BlurUtils;
 
 class AppBlur {
   AppBlur._();

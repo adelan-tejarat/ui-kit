@@ -1,4 +1,5 @@
-import 'dart:ui';
+ import 'dart:ui' show ImageFilter;
+
 import 'package:flutter/material.dart';
 import 'package:vamstreet_components/src/core/constants/app_blur.dart';
 import 'package:vamstreet_components/src/core/constants/dimens.dart';
@@ -18,7 +19,7 @@ class BlurPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Blur Showcase'),
-        backgroundColor: AppColors.neutral50,
+        backgroundColor: const Color(AppColors.neutral50),
         elevation: Dimens.px0,
         centerTitle: true, // وسط‌چین کردن عنوان
       ),
@@ -41,11 +42,11 @@ class BlurPage extends StatelessWidget {
   Widget _buildHeader() {
     return Container(
       padding: const EdgeInsets.all(Dimens.px24),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [AppColors.violet50, AppColors.sky50],
+          colors: [Color(AppColors.violet50),Color( AppColors.sky50)],
         ),
         borderRadius: AppRadius.lgAll,
       ),
@@ -55,7 +56,7 @@ class BlurPage extends StatelessWidget {
           Text(
             'Blur Effects',
             style: AppTypography.textTheme.headlineMedium?.copyWith(
-              color: AppColors.neutral900,
+              color: const Color(AppColors.neutral900),
             ),
           ),
           const SizedBox(height: Dimens.px8),
@@ -63,7 +64,7 @@ class BlurPage extends StatelessWidget {
             'A complete showcase of blur values from none to 3xl. '
             'All cards use the same background image for accurate comparison.',
             style: AppTypography.textTheme.bodyLarge?.copyWith(
-              color: AppColors.neutral700,
+              color: const Color(AppColors.neutral700),
             ),
           ),
         ],
@@ -119,7 +120,7 @@ class BlurPage extends StatelessWidget {
         Text(
           'Real World Examples',
           style: AppTypography.textTheme.headlineSmall?.copyWith(
-            color: AppColors.neutral900,
+            color: const Color(AppColors.neutral900),
           ),
         ),
         const SizedBox(height: Dimens.px20),
@@ -128,9 +129,9 @@ class BlurPage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(Dimens.px20),
           decoration: BoxDecoration(
-            color: AppColors.neutral50,
+            color: const Color(AppColors.neutral50),
             borderRadius: AppRadius.lgAll,
-            border: Border.all(color: AppColors.neutral200),
+            border: Border.all(color: const Color(AppColors.neutral200)),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -138,7 +139,7 @@ class BlurPage extends StatelessWidget {
               Text(
                 'Glassmorphism Effect',
                 style: AppTypography.textTheme.titleMedium?.copyWith(
-                  color: AppColors.neutral800,
+                  color: const Color(AppColors.neutral800),
                 ),
               ),
               const SizedBox(height: Dimens.px16),
@@ -176,9 +177,9 @@ class BlurPage extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(Dimens.px20),
           decoration: BoxDecoration(
-            color: AppColors.neutral50,
+            color: const Color(AppColors.neutral50),
             borderRadius: AppRadius.lgAll,
-            border: Border.all(color: AppColors.neutral200),
+            border: Border.all(color: const Color(AppColors.neutral200)),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -186,7 +187,7 @@ class BlurPage extends StatelessWidget {
               Text(
                 'Background Blur',
                 style: AppTypography.textTheme.titleMedium?.copyWith(
-                  color: AppColors.neutral800,
+                  color: const Color(AppColors.neutral800),
                 ),
               ),
               const SizedBox(height: Dimens.px16),
@@ -342,12 +343,12 @@ class _BlurCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: const Color(AppColors.white),
         borderRadius: AppRadius.lgAll,
-        border: Border.all(color: AppColors.neutral200),
+        border: Border.all(color: const Color(AppColors.neutral200)),
         boxShadow: [
           BoxShadow(
-            color: AppColors.neutral200.withOpacity(0.5),
+            color: const Color(AppColors.neutral200).withOpacity(0.5),
             blurRadius: Dimens.px4,
             offset: const Offset(0, Dimens.px2),
           ),
@@ -392,7 +393,7 @@ class _BlurCard extends StatelessWidget {
                         child: const Icon(
                           Icons.blur_circular,
                           size: Dimens.px32,
-                          color: AppColors.neutral800,
+                          color: Color(AppColors.neutral800),
                         ),
                       ),
                     ),
@@ -411,7 +412,7 @@ class _BlurCard extends StatelessWidget {
                     Text(
                       item.label,
                       style: AppTypography.textTheme.titleSmall?.copyWith(
-                        color: AppColors.neutral800,
+                        color: const Color(AppColors.neutral800),
                         fontWeight: FontWeight.w600,
                       ),
                       textAlign: TextAlign.center,
@@ -423,7 +424,7 @@ class _BlurCard extends StatelessWidget {
                         vertical: Dimens.px4,
                       ),
                       decoration: const BoxDecoration(
-                        color: AppColors.neutral100,
+                        color: Color(AppColors.neutral100),
                         borderRadius: AppRadius.fullAll,
                       ),
                       child: Text(
@@ -431,7 +432,7 @@ class _BlurCard extends StatelessWidget {
                             ? 'No Blur'
                             : 'σ = ${item.value.toInt()}px',
                         style: AppTypography.textTheme.labelSmall?.copyWith(
-                          color: AppColors.neutral600,
+                          color: const Color(AppColors.neutral600),
                           fontWeight: FontWeight.w500,
                         ),
                       ),

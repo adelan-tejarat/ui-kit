@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/utils/opacity.dart';
-import 'package:vamstreet_components/src/core/constants/dimens.dart';
-import 'package:vamstreet_components/src/core/themes/app_colors.dart';
-import 'package:vamstreet_components/src/core/themes/radius.dart';
-import 'package:vamstreet_components/src/core/themes/typography.dart';
+import 'package:vamstreet_components/vamstreet_components.dart'
+    show AppTypography, AppRadius, AppColors, AppOpacity, Dimens;
 
 class OpacityPage extends StatelessWidget {
   const OpacityPage({super.key});
@@ -13,7 +10,7 @@ class OpacityPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Opacity Showcase'),
-        backgroundColor: AppColors.neutral50,
+        backgroundColor: const Color(AppColors.neutral50),
         elevation: Dimens.px0,
       ),
       body: SingleChildScrollView(
@@ -35,9 +32,9 @@ class OpacityPage extends StatelessWidget {
   Widget _buildHeader() {
     return Container(
       padding: const EdgeInsets.all(Dimens.px24),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: [AppColors.violet50, AppColors.pink50],
+          colors: [Color(AppColors.violet50), Color(AppColors.pink50)],
         ),
         borderRadius: AppRadius.lgAll,
       ),
@@ -47,14 +44,14 @@ class OpacityPage extends StatelessWidget {
           Text(
             'Opacity Values',
             style: AppTypography.textTheme.headlineMedium?.copyWith(
-              color: AppColors.neutral900,
+              color: const Color(AppColors.neutral900),
             ),
           ),
           const SizedBox(height: Dimens.px8),
           Text(
             'Complete opacity scale from 0% to 100%',
             style: AppTypography.textTheme.bodyLarge?.copyWith(
-              color: AppColors.neutral700,
+              color: const Color(AppColors.neutral700),
             ),
           ),
         ],
@@ -80,7 +77,9 @@ class OpacityPage extends StatelessWidget {
     return Wrap(
       spacing: Dimens.px12,
       runSpacing: Dimens.px12,
-      children: opacities.map((opacity) => _OpacityCard(model: opacity)).toList(),
+      children: opacities
+          .map((opacity) => _OpacityCard(model: opacity))
+          .toList(),
     );
   }
 
@@ -91,16 +90,16 @@ class OpacityPage extends StatelessWidget {
         Text(
           'Usage Examples',
           style: AppTypography.textTheme.headlineSmall?.copyWith(
-            color: AppColors.neutral900,
+            color: const Color(AppColors.neutral900),
           ),
         ),
         const SizedBox(height: Dimens.px20),
         Container(
           padding: const EdgeInsets.all(Dimens.px20),
           decoration: BoxDecoration(
-            color: AppColors.white,
+            color: const Color(AppColors.white),
             borderRadius: AppRadius.lgAll,
-            border: Border.all(color: AppColors.neutral200),
+            border: Border.all(color: const Color(AppColors.neutral200)),
           ),
           child: Column(
             children: [
@@ -120,10 +119,7 @@ class OpacityPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Disabled State',
-          style: AppTypography.textTheme.titleMedium,
-        ),
+        Text('Disabled State', style: AppTypography.textTheme.titleMedium),
         const SizedBox(height: Dimens.px12),
         Row(
           children: [
@@ -140,10 +136,7 @@ class OpacityPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Hover Effect',
-          style: AppTypography.textTheme.titleMedium,
-        ),
+        Text('Hover Effect', style: AppTypography.textTheme.titleMedium),
         const SizedBox(height: Dimens.px12),
         MouseRegion(
           child: Container(
@@ -151,14 +144,14 @@ class OpacityPage extends StatelessWidget {
               horizontal: Dimens.px16,
               vertical: Dimens.px8,
             ),
-            decoration: BoxDecoration(
-              color: AppColors.brand500,
+            decoration: const BoxDecoration(
+              color: Color(AppColors.brand500),
               borderRadius: AppRadius.mdAll,
             ),
             child: Text(
               'Hover me!',
               style: AppTypography.textTheme.labelLarge?.copyWith(
-                color: AppColors.white,
+                color: const Color(AppColors.white),
               ),
             ),
           ),
@@ -171,10 +164,7 @@ class OpacityPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'Loading State',
-          style: AppTypography.textTheme.titleMedium,
-        ),
+        Text('Loading State', style: AppTypography.textTheme.titleMedium),
         const SizedBox(height: Dimens.px12),
         Stack(
           alignment: Alignment.center,
@@ -188,7 +178,9 @@ class OpacityPage extends StatelessWidget {
               height: Dimens.px20,
               child: CircularProgressIndicator(
                 strokeWidth: 2,
-                valueColor: AlwaysStoppedAnimation<Color>(AppColors.white),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  const Color(AppColors.white),
+                ),
               ),
             ),
           ],
@@ -208,13 +200,13 @@ class OpacityPage extends StatelessWidget {
             vertical: Dimens.px8,
           ),
           decoration: BoxDecoration(
-            color: AppColors.brand500,
+            color: const Color(AppColors.brand500),
             borderRadius: AppRadius.mdAll,
           ),
           child: Text(
             label,
             style: AppTypography.textTheme.labelLarge?.copyWith(
-              color: AppColors.white,
+              color: const Color(AppColors.white),
             ),
           ),
         ),
@@ -241,9 +233,9 @@ class _OpacityCard extends StatelessWidget {
       width: Dimens.px96,
       padding: const EdgeInsets.all(Dimens.px12),
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: const Color(AppColors.white),
         borderRadius: AppRadius.lgAll,
-        border: Border.all(color: AppColors.neutral200),
+        border: Border.all(color: const Color(AppColors.neutral200)),
       ),
       child: Column(
         children: [
@@ -251,26 +243,23 @@ class _OpacityCard extends StatelessWidget {
             width: Dimens.px48,
             height: Dimens.px48,
             decoration: BoxDecoration(
-              color: AppColors.brand500.withOpacity(model.value),
+              color: const Color(AppColors.brand500).withOpacity(model.value),
               borderRadius: AppRadius.mdAll,
-              border: Border.all(color: AppColors.brand200),
+              border: Border.all(color: const Color(AppColors.brand200)),
             ),
             child: Center(
               child: Text(
                 model.label,
                 style: AppTypography.textTheme.labelSmall?.copyWith(
                   color: model.value > 0.5
-                      ? AppColors.white
-                      : AppColors.neutral900,
+                      ? const Color(AppColors.white)
+                      : const Color(AppColors.neutral900),
                 ),
               ),
             ),
           ),
           const SizedBox(height: Dimens.px8),
-          Text(
-            model.label,
-            style: AppTypography.textTheme.labelMedium,
-          ),
+          Text(model.label, style: AppTypography.textTheme.labelMedium),
         ],
       ),
     );

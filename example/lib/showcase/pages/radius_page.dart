@@ -11,7 +11,7 @@ class RadiusPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Border Radius Showcase'),
-        backgroundColor: AppColors.neutral50,
+        backgroundColor: const Color(AppColors.neutral50),
         elevation: Dimens.px0,
       ),
       body: SingleChildScrollView(
@@ -34,9 +34,9 @@ class RadiusPage extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(Dimens.px20),
       decoration: BoxDecoration(
-        color: AppColors.neutral50,
+        color: const Color(AppColors.neutral50),
         borderRadius: AppRadius.lgAll,
-        border: Border.all(color: AppColors.neutral200),
+        border: Border.all(color: const Color(AppColors.neutral200)),
       ),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +46,7 @@ class RadiusPage extends StatelessWidget {
             style: TextStyle(
               fontSize: Dimens.px24,
               fontWeight: FontWeight.w700,
-              color: AppColors.neutral900,
+              color: const Color(AppColors.neutral900),
             ),
           ),
           SizedBox(height: Dimens.px8),
@@ -54,7 +54,7 @@ class RadiusPage extends StatelessWidget {
             'A comprehensive showcase of all border radius values available in the design system.',
             style: TextStyle(
               fontSize: Dimens.px14,
-              color: AppColors.neutral600,
+              color: const Color(AppColors.neutral600),
             ),
           ),
         ],
@@ -112,16 +112,16 @@ class RadiusPage extends StatelessWidget {
           style: TextStyle(
             fontSize: Dimens.px20,
             fontWeight: FontWeight.w700,
-            color: AppColors.neutral900,
+            color: const Color(AppColors.neutral900),
           ),
         ),
         const SizedBox(height: Dimens.px16),
         Container(
           padding: const EdgeInsets.all(Dimens.px20),
           decoration: BoxDecoration(
-            color: AppColors.neutral50,
+            color: const Color(AppColors.neutral50),
             borderRadius: AppRadius.lgAll,
-            border: Border.all(color: AppColors.neutral200),
+            border: Border.all(color: const Color(AppColors.neutral200)),
           ),
           child: Column(
             children: [
@@ -169,7 +169,7 @@ class RadiusPage extends StatelessWidget {
           style: const TextStyle(
             fontSize: Dimens.px16,
             fontWeight: FontWeight.w600,
-            color: AppColors.neutral800,
+            color: const Color(AppColors.neutral800),
           ),
         ),
         const SizedBox(height: Dimens.px4),
@@ -177,7 +177,7 @@ class RadiusPage extends StatelessWidget {
           subtitle,
           style: const TextStyle(
             fontSize: Dimens.px12,
-            color: AppColors.neutral500,
+            color: const Color(AppColors.neutral500),
           ),
         ),
         const SizedBox(height: Dimens.px12),
@@ -199,14 +199,14 @@ class RadiusPage extends StatelessWidget {
             width: Dimens.px80,
             height: Dimens.px80,
             decoration: BoxDecoration(
-              color: AppColors.brand100,
+              color: const Color(AppColors.brand100),
               borderRadius: radius,
-              border: Border.all(color: AppColors.brand300),
+              border: Border.all(color: const Color(AppColors.brand300)),
             ),
             child: const Center(
               child: Icon(
                 Icons.card_giftcard,
-                color: AppColors.brand600,
+                color: const Color(AppColors.brand600),
                 size: Dimens.px32,
               ),
             ),
@@ -216,7 +216,7 @@ class RadiusPage extends StatelessWidget {
             label,
             style: const TextStyle(
               fontSize: Dimens.px12,
-              color: AppColors.neutral700,
+              color: const Color(AppColors.neutral700),
             ),
           ),
         ],
@@ -234,7 +234,7 @@ class RadiusPage extends StatelessWidget {
             width: Dimens.px96,
             height: Dimens.px40,
             decoration: BoxDecoration(
-              color: AppColors.brand500,
+              color: const Color(AppColors.brand500),
               borderRadius: radius,
             ),
             child: Center(
@@ -242,7 +242,7 @@ class RadiusPage extends StatelessWidget {
                 label,
                 style: const TextStyle(
                   fontSize: Dimens.px12,
-                  color: AppColors.white,
+                  color: const Color(AppColors.white),
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -270,12 +270,12 @@ class _RadiusCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: const Color(AppColors.white),
         borderRadius: AppRadius.lgAll,
-        border: Border.all(color: AppColors.neutral200),
+        border: Border.all(color: const Color(AppColors.neutral200)),
         boxShadow: [
           BoxShadow(
-            color: AppColors.neutral200.withOpacity(0.5),
+            color: const Color(AppColors.neutral200).withOpacity(0.5),
             blurRadius: Dimens.px4,
             offset: const Offset(0, Dimens.px2),
           ),
@@ -289,14 +289,17 @@ class _RadiusCard extends StatelessWidget {
             width: Dimens.px80,
             height: Dimens.px80,
             decoration: BoxDecoration(
-              color: AppColors.brand100,
+              color: const Color(AppColors.brand100),
               borderRadius: BorderRadius.circular(item.value),
-              border: Border.all(color: AppColors.brand300, width: Dimens.px1),
+              border: Border.all(
+                color: const Color(AppColors.brand300),
+                width: Dimens.px1,
+              ),
             ),
             child: const Center(
               child: Icon(
                 Icons.square_rounded,
-                color: AppColors.brand600,
+                color: const Color(AppColors.brand600),
                 size: Dimens.px32,
               ),
             ),
@@ -308,7 +311,7 @@ class _RadiusCard extends StatelessWidget {
             style: const TextStyle(
               fontSize: Dimens.px14,
               fontWeight: FontWeight.w500,
-              color: AppColors.neutral800,
+              color: const Color(AppColors.neutral800),
             ),
           ),
           const SizedBox(height: Dimens.px4),
@@ -319,14 +322,14 @@ class _RadiusCard extends StatelessWidget {
               vertical: Dimens.px2,
             ),
             decoration: const BoxDecoration(
-              color: AppColors.neutral100,
+              color: const Color(AppColors.neutral100),
               borderRadius: AppRadius.fullAll,
             ),
             child: Text(
               item.value == AppRadius.full ? 'full' : '${item.value.toInt()}px',
               style: const TextStyle(
                 fontSize: Dimens.px12,
-                color: AppColors.neutral600,
+                color: const Color(AppColors.neutral600),
               ),
             ),
           ),

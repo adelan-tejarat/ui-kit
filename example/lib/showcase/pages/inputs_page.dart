@@ -12,7 +12,7 @@ class InputsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Inputs Showcase'),
-        backgroundColor: AppColors.neutral50,
+        backgroundColor:const Color(AppColors.neutral50 ) ,
         elevation: Dimens.px0,
       ),
       body: Center(

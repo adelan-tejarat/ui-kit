@@ -25,7 +25,9 @@ class BlurUtils {
   // اعمال blur روی رنگ
   static Color applyBlurToColor(Color color, double blurValue) {
     // این یه شبیه‌سازی سادست - در واقعیت blur روی رنگ معنی نداره
-    return color.withOpacity(color.opacity * (1 - (blurValue / 100)).clamp(0.1, 1.0));
+    return color.withOpacity(
+      color.opacity * (1 - (blurValue / 100)).clamp(0.1, 1.0),
+    );
   }
 
   // تبدیل blur به درصد برای نمایش
@@ -53,15 +55,24 @@ class BlurUtils {
   // تبدیل string به مقدار blur
   static double fromString(String blurName) {
     switch (blurName) {
-      case 'blur-none': return 0;
-      case 'blur-xs': return 4;
-      case 'blur-sm': return 8;
-      case 'blur-md': return 12;
-      case 'blur-lg': return 16;
-      case 'blur-xl': return 20;
-      case 'blur-2xl': return 24;
-      case 'blur-3xl': return 32;
-      default: return 0;
+      case 'blur-none':
+        return 0;
+      case 'blur-xs':
+        return 4;
+      case 'blur-sm':
+        return 8;
+      case 'blur-md':
+        return 12;
+      case 'blur-lg':
+        return 16;
+      case 'blur-xl':
+        return 20;
+      case 'blur-2xl':
+        return 24;
+      case 'blur-3xl':
+        return 32;
+      default:
+        return 0;
     }
   }
 }

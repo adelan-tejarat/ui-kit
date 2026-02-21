@@ -1,5 +1,6 @@
 import '/showcase/pages/showcase.dart' show ShowCaseApp;
 import 'package:flutter/material.dart';
+import 'package:vamstreet_components/src/core/themes/typography.dart' show AppTypography;
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vamstreet Components',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'IRANSansXFaNum',
-        useMaterial3: true,
-      ),
-      home:  ShowCaseApp(),
+      theme: Theme.of(context).copyWith(textTheme: AppTypography.textTheme),
+      home:   ShowCaseApp(),
     );
   }
 }

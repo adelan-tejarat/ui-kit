@@ -17,6 +17,9 @@ export 'src/features/buttons/core/button_size.dart';
 // Extensions
 export 'src/core/extension/radius_extensions.dart';
 
+// Services
+export 'src/core/service/toast_service.dart';
+
 // Generated assets
 export 'src/core/utils/gen/assets/assets.gen.dart';
 

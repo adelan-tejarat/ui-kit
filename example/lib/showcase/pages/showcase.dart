@@ -4,6 +4,7 @@ import 'package:vamstreet_components/src/core/themes/app_colors.dart';
 import 'package:vamstreet_components/src/core/themes/radius.dart';
 import 'package:vamstreet_components/src/core/themes/typography.dart';
 import 'package:vamstreet_components_example/showcase/pages/selectable_buttons_page.dart';
+import 'package:vamstreet_components_example/showcase/pages/toast_page.dart' show ToastPage;
 
 // ایمپورت پیج‌ها
 import 'blur_page.dart';
@@ -21,6 +22,13 @@ class ShowCaseApp extends StatelessWidget {
 
   // لیست تمام صفحات برای نمایش
   final List<ShowcasePage> _pages = [
+    ShowcasePage(
+      title: 'Toast',
+      subtitle: 'Toast notifications • 4 types • Custom actions',
+      icon: Icons.notifications,
+      color: const Color(AppColors.brand500),
+      page: const ToastPage(),
+    ),
     ShowcasePage(
       title: 'SelectBox',
       subtitle: 'Dropdown with TextInputWidget standards',

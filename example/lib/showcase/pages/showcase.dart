@@ -8,6 +8,7 @@ import 'package:vamstreet_components_example/showcase/pages/selectable_buttons_p
 // ایمپورت پیج‌ها
 import 'blur_page.dart';
 import 'colors_page.dart';
+import 'drop_down_page.dart';
 import 'icon_page.dart';
 import 'radius_page.dart';
 import 'typography_page.dart';
@@ -20,6 +21,13 @@ class ShowCaseApp extends StatelessWidget {
 
   // لیست تمام صفحات برای نمایش
   final List<ShowcasePage> _pages = [
+    ShowcasePage(
+      title: 'SelectBox',
+      subtitle: 'Dropdown with TextInputWidget standards',
+      icon: Icons.arrow_drop_down_circle,
+      color: const Color(AppColors.violet600), // یه رنگ جدید
+      page: const SelectBoxPage(),
+    ),
     ShowcasePage(
       title: 'Selectable Buttons',
       subtitle: 'Radio-like selectable component with 2 sizes and 4 states',

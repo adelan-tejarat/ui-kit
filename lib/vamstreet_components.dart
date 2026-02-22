@@ -27,3 +27,4 @@ export 'src/features/selectable/selectable_button_widget.dart';
 export 'src/features/selectable/core/selectable_size.dart';
 export 'src/features/input/description_input_widget.dart';
 export 'src/features/input/text_input_widget.dart';
+export 'src/features/selectable/drop_down_widget.dart';

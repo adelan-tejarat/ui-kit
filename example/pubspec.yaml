@@ -1,0 +1,32 @@
+name: vamstreet_components_example
+description: "Example application showcasing Vamstreet Components UI Kit"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.4 <4.0.0'
+  flutter: '>=3.38.5'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg:
+  vamstreet_components:
+    path: ../
+  flutter_gen_runner: ^5.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+      - assets/svg/
+
+  # fonts:
+  #   - family: TestFont
+  #     fonts:
+  #       - asset: assets/fonts/TestFont.ttf

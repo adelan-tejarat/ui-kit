@@ -1,0 +1,212 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.metadata/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+.idea/*
+*.iml
+*.iml
+.android/
+.ios/
+.vscode/
+**/coverage/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/dSYMs/
+**/ios/ios_symbols/
+**/ios/quality.trace
+**/ios/test_environments/
+**/linux/flutter/ephemeral/
+**/linux/flutter/ephemeral/.plugin_symlinks
+**/macos/Flutter/Flutter.framework
+**/macos/Flutter/Flutter.podspec
+**/macos/Flutter/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/.plugin_symlinks
+**/windows/flutter/ephemeral/
+**/windows/flutter/ephemeral/.plugin_symlinks
+**/windows/runner/flutter_window.cpp
+**/windows/runner/main.cpp
+**/windows/runner/runner.exe
+**/windows/runner/utils.cpp
+**/windows/runner/utils.h
+.dart_tool/
+.packages
+build/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+pubspec.lock
+
+# Flutter/Dart/Pub
+**/doc/api/
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+
+# iOS related
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/.last_build_id
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS related
+**/macos/Flutter/Flutter.framework
+**/macos/Flutter/Flutter.podspec
+**/macos/Flutter/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/.plugin_symlinks
+
+# Linux related
+**/linux/flutter/ephemeral/
+**/linux/flutter/ephemeral/.plugin_symlinks
+
+# Windows related
+**/windows/flutter/ephemeral/
+**/windows/flutter/ephemeral/.plugin_symlinks
+
+# Symbolication related
+app.*.map
+**/android/app/**/app-*.apk
+**/android/app/**/app-*.aab
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/App.framework
+**/ios/Runner.app.dSYM
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.iws
+
+# IDEs
+.idea/
+.vscode/
+**/.idea/
+**/.vscode/
+**/*.iml
+**/android/.idea/
+**/android/*.iml
+**/ios/.idea/
+**/ios/*.iml
+
+# Coverage
+coverage/
+**/coverage/
+
+# Testing
+test/.test_analysis_options.dart
+test/.test_coverage.dart
+**/test/.test_analysis_options.dart
+**/test/.test_coverage.dart
+
+# Symbols
+app.*.map
+**/android/app/**/app-*.apk
+**/android/app/**/app-*.aab
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/App.framework
+**/ios/Runner.app.dSYM
+
+# Exceptions to above
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode3v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+!/**.iml
+!/**/android/**/gradle-wrapper.jar
+!/**/android/**/build.gradle
+!/**/android/**/settings.gradle
+!/**/android/**/gradle
+!/**/android/**/app/build.gradle
+!/**/android/**/app/src/**/*.java
+!/**/android/**/app/src/**/*.kt
+
+# Fastlane specific
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+**/fastlane/readme.md
+
+# Firebase
+**/firebase.json
+**/.firebaserc
+**/firebase_options.dart
+**/google-services.json
+**/GoogleService-Info.plist
+
+# Environment files
+**.env
+**.env.dev
+**.env.prod
+**.env.local
+**.env.staging
+
+# Key files
+**.p12
+**.p8
+**.pem
+**.key
+**.keystore
+**/android/app/*.jks
+**/android/key.properties
+
+# Localization
+**/lib/generated/
+**/lib/l10n/
+**/lib/src/generated/
+**/lib/src/l10n/
+
+# Web related
+**/build/web/
+**/web/index.html
+**/web/manifest.json
+**/web/favicon.png
+**/web/icons/
+
+# Native
+**/android/app/src/main/assets/
+**/ios/Runner/Assets.xcassets/

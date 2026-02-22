@@ -18,6 +18,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   search_autocomplete: ^1.0.2
+  toastification: ^3.0.3
 
 dev_dependencies:
   flutter_test:

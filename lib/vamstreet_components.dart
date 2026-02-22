@@ -25,3 +25,5 @@ export 'src/features/buttons/button_widget.dart';
 export 'src/features/buttons/icon_button_widget.dart';
 export 'src/features/selectable/selectable_button_widget.dart';
 export 'src/features/selectable/core/selectable_size.dart';
+export 'src/features/input/description_input_widget.dart';
+export 'src/features/input/text_input_widget.dart';

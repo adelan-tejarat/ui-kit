@@ -1,98 +1,109 @@
-# 1.15.0+17
-- [Update]: Resolved problem weight size of fonts [#33](https://github.com/adelan-tejarat/vamstreet-components/pull/34)
+## 1.0.0 — Enterprise-Grade UI Component Library Initial Release
 
-# 1.14.0+16
-- [Update]: update dependencies [#31](https://github.com/adelan-tejarat/vamstreet-components/pull/32)
+### 🚀 Features
+- **feat(buttons):** comprehensive button system with showcase
+  - ButtonWidget & IconButtonWidget with size/mode/color variants
+  - 3 sizes: md (40px), lg (48px), xlg (56px)
+  - 3 modes: filled, outline, standard
+  - 4 color packs: Brand, Green, Red, Neutral with 5 interaction states (enabled/disabled/loading/hover/focus)
+  - Custom iOS-style loading widget with performance optimization
+  - Adaptive primary, secondary, and text button implementations
+  - Fixed expand-in-width behavior with proper content length handling
+  - Default values for simplified button widget usage
 
-# 1.13.0+15
-- [Update]: Add Farsi support and remove ES/FR localization [#29](https://github.com/adelan-tejarat/vamstreet-components/pull/30)
-  - update(localization): add farsi support and remove es/fr localization
+- **feat(radio):** enterprise-grade radio button component with showcase
+  - RadioButtonWidget built with state resolver architecture
+  - Support for lg (24px) and xlg (32px) sizes
+  - Integrated ColorPack system (Brand/Green/Red/Neutral)
+  - Full interaction states: enabled, disabled, selected, hover, focus
+  - Controlled selection model via groupValue
+  - Dedicated showcase page demonstrating all variants and states
 
-- [Update]: Update text styles and add `iran-sans` font [#29](https://github.com/adelan-tejarat/vamstreet-components/pull/30)
-  - update(core:textStyles): update text style and re-config fonts by adding `iran-sans` font
+- **feat(input):** enterprise-grade text input components with showcase
+  - TextInputWidget built with enterprise-grade architecture
+    - Support for 2 sizes: Small (12px padding) and Large (16px padding)
+    - Prefix/Suffix support with tap handlers and disabled state
+    - 5 interaction states: normal, hover, focus, error, disabled
+    - Error state management via errorText (no redundant isError flag)
+    - Performance optimized with flutter_hooks (useMemoized, useCallback)
+    - Proper RTL support with EdgeInsetsDirectional
+    - MaxLines and height property fixes
 
-- [Update]: Update color palettes [#29](https://github.com/adelan-tejarat/vamstreet-components/pull/30)
-  - update(core:pallets): update some color pallets
+  - DescriptionInputWidget for multi-line text input
+    - Fixed height: 4 lines (120px) with 12px padding all around
+    - Multi-line support with proper keyboard configuration
+    - Same interaction states as TextInputWidget
+    - Error text support with visual feedback
+    - Optimized line height calculation (24px per line)
 
-# 1.12.0+14
-- [Feature]: Change font to `iran sans` [#26](https://github.com/adelan-tejarat/vamstreet-components/pull/27)
-  -  feat(assets): remove old font and add `iran sans`
-- [Update]: Update text styles for `iran sans` font [#26](https://github.com/adelan-tejarat/vamstreet-components/pull/28)
-  -  update(core:textStyles): fix `AppTextStyles` according `iran sans` font
+- **feat(checkboxes):** add adaptive checkbox widget
+  - Support dynamic theming and typography in AdaptiveCheckbox
 
-# 1.11.0+13
-- [Refactor]: Fix `max_lines` and `height` properties in the `AdaptiveTextInput` component [#24](https://github.com/adelan-tejarat/vamstreet-components/pull/25)
+- **feat(textInputs):** add adaptive text input widget
+  - Fix max_lines and height properties
+  - Proper text field sizing implementation
 
-# 1.10.0+12
-- [Feature]: Add disable state to buttons  [#22](https://github.com/adelan-tejarat/vamstreet-components/pull/23)
+- **feat(core):** comprehensive design system foundation
+  - Complete color system with brand, accent, neutral, and semantic colors
+  - Typography system with IRAN Sans font family
+  - Proper font weight configuration (regular: 400, medium: 500, bold: 700)
+  - Blur utilities with values from none to 3xl (4px to 32px)
+  - Opacity system with 21 levels (0% to 100%)
+  - Border radius scale: none (0px) to full (9999px)
+  - Dimension constants for consistent spacing
+  - Dark/light mode scaffold background color configuration
 
-# 1.9.0+11
-- [Feature]: Add Adaptive Text Field Component  [#17](https://github.com/adelan-tejarat/vamstreet-components/pull/18)
-  - feat(textInputs): add adaptive text input widget
+- **feat(assets):** comprehensive icon library
+  - 200+ SVG icons from Heroicons collection
+  - Proper asset generation with FlutterGen
+  - Icons showcase page with search and preview capabilities
 
-- [Update]: fix import widget for access outer `src` directory  [#17](https://github.com/adelan-tejarat/vamstreet-components/pull/19)
+- **feat(localization):** add Farsi support
+  - Remove Spanish and French localizations
+  - Focus on Persian language support
 
-- [Update]: fix import `text_field_sizes` for access outer `src` directory   [#17](https://github.com/adelan-tejarat/vamstreet-components/pull/21)
+### 🎨 Showcase & Documentation
+- **feat(showcase):** complete component showcase application
+  - Dedicated pages for each component type (Buttons, Radio, Inputs, Icons, Colors)
+  - Real-time state visualization with hover/focus toggles
+  - Size variants with detailed specifications
+  - Error state management with dynamic validation
+  - Live examples with state tracking
+  - Comprehensive RTL legend with usage guidelines
+  - Responsive grid layouts for all screen sizes
 
-- [Update]: match dark accent color to light mode value [#17](https://github.com/adelan-tejarat/vamstreet-components/pull/21)
+### 🔧 Fixes & Improvements
+- **fix(color/icons):** fix color value handling and icon asset loading
+  - Convert Color constants to raw integer values with getters
+  - Fix icon path resolution in assets
+  - Resolve const Color constructor warnings
 
-# 1.8.0+10
-- [Refactor]:  Create Checkbox Component [#15](https://github.com/adelan-tejarat/vamstreet-components/pull/16)
-  - feat(checkboxes): add adaptive checkbox widget
-  - feat(checkboxes): support dynamic theming and typography in AdaptiveCheckbox
+- **fix(buttons):** resolve debug overflow in EnableIntrinsicWidth
+  - Fix null safety bug in expandToFullWidth property
+  - Show correct behavior in Widgetbook
 
-# 1.7.0+9
-- [Refactor]: Fix/fix null safety in expandToFullWidth property of buttons  [#11](https://github.com/adelan-tejarat/vamstreet-components/pull/14)
-  - fix: fix debug overflow in EnableIntrinsicWidth and show correct in widgetBook
-  - fix(buttons): fix null safety bug in expandToFullWidth property of buttons
+- **fix(textInputs):** fix max_lines and height property issues
+  - Properly handle multi-line text input constraints
 
-# 1.6.0+8
-- [Refactor]: Add Default Values to Simplify Button Widgets Usage  [#11](https://github.com/adelan-tejarat/vamstreet-components/pull/13)
-  - refactor(buttons): set default values for certain properties in button widgets to simplify button definition
-  - refactor(core): set reverse condition and fix expand in width
+### 🧹 Code Quality & Maintenance
+- **refactor(core):** comprehensive design system alignment
+  - Replace brand color in accent color palette
+  - Match dark accent color to light mode values
+  - Fix font height to 1.0 for proper text alignment
+  - Update text styles according to IRAN Sans font
+  - Reconfigure fonts by adding iran-sans family
 
-# 1.5.0+7
-- [Refactor]: Fix expand in width for buttons [#11](https://github.com/adelan-tejarat/vamstreet-components/pull/12)
-  - refactor(buttons): fix expand in width for buttons
+- **style:** comprehensive lint fixes and code style improvements
+  - Fix import statements for proper src directory access
+  - Resolve all lint issues across the codebase
+  - Clean code organization following feature-based structure
 
-# 1.4.0+6
-- [Fix]: Adjust button width to match content length [#9](https://github.com/adelan-tejarat/vamstreet-components/pull/10)
-  - fix(buttons): set intrinsic width based on content
+- **chore(deps):** update and fix dependencies
+  - Add shimmer package for loading effects
+  - Fix dependency resolution and lint issues
+  - Proper weight size configuration for fonts
 
-# 1.3.0+5
-- [Refactor]: Change Background Color According Figma Design   [#7](https://github.com/adelan-tejarat/vamstreet-components/pull/8)
-  - refactor(core): set `scaffoldBackgroundColor` for dark/light modes
-
-# 1.2.0+4
-- [Refactor]: Refactor font height for alignment text in components  [#5](https://github.com/adelan-tejarat/vamstreet-components/pull/6)
-
-# 1.1.1+3
-- [Update]: Replace brand color in accent color pallet [#3](https://github.com/adelan-tejarat/vamstreet-components/pull/4)
-
-# 1.1.0+2
-- [Feature]: Add some components [#1](https://github.com/adelan-tejarat/vamstreet-components/pull/2)
-  - Implemented adaptive primary button (filled button)
-  - Implemented adaptive secondary button (outline button)
-  - Implemented adaptive text button (outline button)
-  - Implemented chip text box (text input)
-  - Implemented custom text (text)
-  - Updated Widgetbook use cases to demonstrate all button variants
-
-- [Docs]: Add issue templates [#1](https://github.com/adelan-tejarat/vamstreet-components/pull/2)
-  - Created bug report template
-  - Created feature request template
-  - Added pull request template
-
-- [CI]: Add lint & test and deploy-web steps in pipeline [#1](https://github.com/adelan-tejarat/vamstreet-components/pull/2)
-  - Implemented automated linting workflow
-  - Added testing stage to CI pipeline
-  - Configured web deployment process
-
-- [Style]: Fix lint issues and improve code styles [#1](https://github.com/adelan-tejarat/vamstreet-components/pull/2)
-  - Resolved all Dart analysis warnings
-  - Applied consistent code formatting
-  - Improved documentation comments
-
-# 1.0.0+1
-
-- [Feature] : Initial Flutter project setup with base app, dependencies, and documentation updates.
+### 📦 Project Setup
+- **ci:** add lint & test and deploy-web steps in pipeline
+- **docs:** add issue templates
+- **chore:** initial project setup with complete build configuration

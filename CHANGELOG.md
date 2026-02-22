@@ -1,3 +1,38 @@
+## 1.2.0 — Enterprise-Grade Toast Notification System
+
+### 🚀 Features
+- **feat(toast):** enterprise-grade toast notification system with showcase
+  - ToastService built with enterprise-grade architecture
+    - 4 notification types: Success, Error, Warning, Info
+    - 2 sizes: Regular (default) and Compact (half height)
+    - Customizable duration with proper defaults (4s/3s)
+    - RTL support for Persian language
+    - Drag to close • Pause on hover • Auto-close timer
+
+  - Powered by `toastification` package
+    - Stable overlay management with no conflicts
+    - Queue handling for multiple notifications
+    - Built-in animations with flatColored style
+    - Custom close button with ripple effect
+
+  - Color system aligned with design tokens
+    - Success: green/600 border • #0D542B icon • #F0FDF4 bg
+    - Error: red/600 border • #7B3306 icon • #FEF2F2 bg
+    - Warning: brand/600 border • #7B3306 icon • #FFFBEB bg
+    - Info: sky/600 border • #024A70 icon • #F0F9FF bg
+    - Dark variants for Error/Warning with red/700 & brand/700
+
+  - Complete showcase page demonstrating:
+    - Toast types with/without close button
+    - Description support with proper typography
+    - Duration variants (2s, 3s, 4s, 7s)
+    - Sequential toast demonstration
+    - Dismiss all utility
+    - Comprehensive RTL legend with usage guidelines
+    - Color-coded buttons matching toast themes
+
+---
+
 ## 1.1.0 — Enterprise-Grade SelectBox Component
 
 ### 🚀 Features

@@ -3,7 +3,7 @@ description: "The Vamstreet Component Library is a unified design system and mod
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.1.0+2
+version: 1.2.0+3
 
 environment:
   sdk: '>=3.10.4 <4.0.0'  # Updated to match your Dart version

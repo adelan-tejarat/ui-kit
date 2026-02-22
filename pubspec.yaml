@@ -1,0 +1,45 @@
+name: vamstreet_components
+description: "The Vamstreet Component Library is a unified design system and modular codebase that powers both the Vamstreet Client application and Dashboard. This repository contains reusable UI components and design assets to maintain consistency across all Vamstreet products."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.15.0+17
+
+environment:
+  sdk: '>=3.10.4 <4.0.0'  # Updated to match your Dart version
+  flutter: '>=3.38.5'     # Added Flutter constraint (optional but recommended)
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc:
+  flutter_hooks:
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.4
+  flutter_gen_runner:
+
+flutter_gen:
+  output: lib/src/core/utils/gen/assets # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: IRANSansXFaNum
+      fonts:
+        - asset: assets/fonts/IRANSansXFaNum_RegularD4.ttf
+          weight: 400
+        - asset: assets/fonts/IRANSansXFaNum_MediumD4.ttf
+          weight: 500
+        - asset: assets/fonts/IRANSansXFaNum_BoldD4.ttf
+          weight: 700

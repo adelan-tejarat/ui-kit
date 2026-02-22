@@ -1,0 +1,1 @@
+enum RadioSize { lg, xlg }

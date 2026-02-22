@@ -1,3 +1,37 @@
+## 1.1.0 — Enterprise-Grade SelectBox Component
+
+### 🚀 Features
+- **feat(selectbox):** enterprise-grade searchable dropdown component with showcase
+  - SelectBox<T> built with enterprise-grade architecture
+    - Generic type support for any data model via SelectOption<T>
+    - Support for 2 sizes (Small/Large) via isLarge flag
+    - Prefix/Suffix support with tap handlers and disabled state
+    - 5 interaction states: normal, hover, focus, error, disabled
+    - Error state management via errorText (no redundant isError flag)
+    - Real-time search/filter as you type
+    - Leading icons support in dropdown items
+    - Proper RTL support with EdgeInsetsDirectional
+
+  - Powered by search_autocomplete package
+    - Stable focus management with no conflicts
+    - Built-in search field with auto-focus
+    - Custom dropdown builder with shadow and border styling
+    - Empty state handling with "No results found" message
+
+  - Complete showcase page demonstrating:
+    - All dropdown states with visual indicators
+    - Hover effect demonstration (border/background/icon color changes)
+    - Prefix/Suffix examples with click handlers
+    - Size variants with detailed specifications (48px/56px heights)
+    - Error state management with dynamic validation
+    - Leading icons in options (flags, language icons)
+    - Live examples with selection tracking
+    - Real-world form example (country/city/language)
+    - Comprehensive RTL legend with usage guidelines
+    - Priority ordering: Disabled > Error > Focus > Hover > Normal
+
+---
+
 ## 1.0.0 — Enterprise-Grade UI Component Library Initial Release
 
 ### 🚀 Features
@@ -102,6 +136,8 @@
   - Add shimmer package for loading effects
   - Fix dependency resolution and lint issues
   - Proper weight size configuration for fonts
+
+---
 
 ### 📦 Project Setup
 - **ci:** add lint & test and deploy-web steps in pipeline

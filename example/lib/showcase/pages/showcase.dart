@@ -8,6 +8,7 @@ import 'package:vamstreet_components_example/showcase/pages/toast_page.dart' sho
 
 // ایمپورت پیج‌ها
 import 'blur_page.dart';
+import 'bottom_nav_showcase.dart';
 import 'colors_page.dart';
 import 'drop_down_page.dart';
 import 'icon_page.dart';
@@ -22,6 +23,13 @@ class ShowCaseApp extends StatelessWidget {
 
   // لیست تمام صفحات برای نمایش
   final List<ShowcasePage> _pages = [
+    ShowcasePage(
+      title: 'Bottom Navigation',
+      subtitle: 'Custom bottom nav • 5 pages • Center FAB',
+      icon: Icons.navigation,
+      color: const Color(AppColors.amber600), // یا هر رنگ دیگه‌ای که دوست دارید
+      page: const BottomNavShowcase(),
+    ),
     ShowcasePage(
       title: 'Toast',
       subtitle: 'Toast notifications • 4 types • Custom actions',

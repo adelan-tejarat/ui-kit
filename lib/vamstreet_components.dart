@@ -23,6 +23,9 @@ export 'src/core/service/toast_service.dart';
 // Generated assets
 export 'src/core/utils/gen/assets/assets.gen.dart';
 
+// BloC & Cubit
+export 'src/core/bloc/bottom_nav_cubit.dart';
+
 // Features
 export 'src/features/buttons/button_widget.dart';
 export 'src/features/buttons/icon_button_widget.dart';
@@ -31,3 +34,7 @@ export 'src/features/selectable/core/selectable_size.dart';
 export 'src/features/input/description_input_widget.dart';
 export 'src/features/input/text_input_widget.dart';
 export 'src/features/selectable/drop_down_widget.dart';
+export 'src/features/bottom_nav/views/center_barcode_fab.dart';
+export 'src/features/bottom_nav/bottom_nav_config.dart';
+export 'src/features/bottom_nav/views/custom_bottom_nav.dart';
+export 'src/features/bottom_nav/bottom_nav_item_type.dart';

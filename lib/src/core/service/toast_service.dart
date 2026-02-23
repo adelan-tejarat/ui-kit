@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:toastification/toastification.dart';
-import 'package:vamstreet_components/vamstreet_components.dart' show AppColors;
+import 'package:vamstreet_uikit/vamstreet_uikit.dart' show AppColors;
 
 // Enum برای سایز Toast
 enum ToastSize {

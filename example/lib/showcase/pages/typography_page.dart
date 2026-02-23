@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/themes/typography.dart';
+import 'package:vamstreet_uikit/src/core/themes/typography.dart';
 
 class TypographyPage extends StatelessWidget {
   const TypographyPage({super.key});

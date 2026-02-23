@@ -1,6 +1,6 @@
 import '/showcase/pages/showcase.dart' show ShowCaseApp;
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/themes/typography.dart' show AppTypography;
+import 'package:vamstreet_uikit/src/core/themes/typography.dart' show AppTypography;
 
 void main() {
   runApp(const MyApp());

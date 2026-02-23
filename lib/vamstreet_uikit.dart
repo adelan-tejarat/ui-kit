@@ -1,7 +1,7 @@
 /// Vamstreet Components
 /// A comprehensive UI component library for Flutter
 
-library vamstreet_components;
+library vamstreet_uikit;
 
 // Core exports
 export 'src/core/blur/blur_utils.dart';

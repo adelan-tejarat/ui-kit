@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/vamstreet_components.dart'
+import 'package:vamstreet_uikit/vamstreet_uikit.dart'
     show AppTypography, Dimens, RadioSize, ColorPack;
 
 import 'core/radio_color_packs.dart';

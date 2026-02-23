@@ -1,7 +1,7 @@
 // example/lib/showcase/pages/selectbox_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/vamstreet_components.dart';
+import 'package:vamstreet_uikit/vamstreet_uikit.dart';
 
 class SelectBoxPage extends StatefulWidget {
   const SelectBoxPage({super.key});

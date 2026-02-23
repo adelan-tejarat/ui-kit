@@ -1,5 +1,5 @@
-import 'package:vamstreet_components/src/features/selectable/core/radio_color_details.dart';
-import 'package:vamstreet_components/src/features/selectable/core/radio_color_state.dart';
+import 'package:vamstreet_uikit/src/features/selectable/core/radio_color_details.dart';
+import 'package:vamstreet_uikit/src/features/selectable/core/radio_color_state.dart';
 
 import '../../../core/themes/app_colors.dart';
 

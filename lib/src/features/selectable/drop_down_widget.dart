@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:search_autocomplete/search_autocomplete.dart';
-import 'package:vamstreet_components/vamstreet_components.dart';
+import 'package:vamstreet_uikit/vamstreet_uikit.dart';
 
 class SelectOption<T> {
   final T value;

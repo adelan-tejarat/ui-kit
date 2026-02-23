@@ -1,3 +1,25 @@
+## 1.3.0 — Bottom Navigation Bar with Center FAB
+
+### 🚀 Features
+- **feat(navigationBar):** add bottom navigation component with showcase
+  - BottomNavCubit for state management
+  - 5 pages (profile, settings, wallet, services, barcode)
+  - 4 visible items + center FAB
+  - CustomBottomNav with active/inactive states
+  - CenterBarcodeFab for QR scanner
+  - MainScreen with page builder injection
+  - BottomNavConfig with design tokens
+
+### 🎨 Showcase
+- **feat(showcase):** add bottom navigation showcase page
+  - All 5 sample pages
+  - Integrated in ShowCaseApp grid
+
+### 📦 Dependencies
+- **flutter_bloc:** ^8.1.3
+
+---
+
 ## 1.2.0 — Enterprise-Grade Toast Notification System
 
 ### 🚀 Features

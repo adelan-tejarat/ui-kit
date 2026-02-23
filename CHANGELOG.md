@@ -1,3 +1,10 @@
+## 2.0.1 — Update Dimens - add spacings
+
+### 🚀 Update
+- **update(dimens):** Add spacing variables
+
+---
+
 ## 2.0.0 — Change Package Name to `vamstreet_uikit`
 
 ### 🚀 Features

@@ -3,7 +3,7 @@ description: "The Vamstreet UiKit Library is a unified design system and modular
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 2.0.0+5
+version: 2.0.1+6
 
 environment:
   sdk: '>=3.10.4 <4.0.0'  # Updated to match your Dart version

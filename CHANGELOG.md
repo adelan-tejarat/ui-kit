@@ -1,4 +1,9 @@
-## 1.3.0 — Bottom Navigation Bar with Center FAB
+## 2.0.0 — Change Package Name to `vamstreet_uikit`
+
+### 🚀 Features
+- **feat:** Change package name to `vamstreet_uikit`
+
+---
 
 ### 🚀 Features
 - **feat(navigationBar):** add bottom navigation component with showcase

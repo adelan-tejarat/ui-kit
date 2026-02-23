@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:vamstreet_components/src/core/constants/dimens.dart';
-import 'package:vamstreet_components/src/core/themes/app_colors.dart';
-import 'package:vamstreet_components/src/core/themes/radius.dart';
-import 'package:vamstreet_components/src/core/themes/typography.dart';
+import 'package:vamstreet_uikit/src/core/constants/dimens.dart';
+import 'package:vamstreet_uikit/src/core/themes/app_colors.dart';
+import 'package:vamstreet_uikit/src/core/themes/radius.dart';
+import 'package:vamstreet_uikit/src/core/themes/typography.dart';
 import 'package:flutter_svg/flutter_svg.dart' show SvgPicture;
-import 'package:vamstreet_components/src/core/utils/gen/assets/assets.gen.dart'
+import 'package:vamstreet_uikit/src/core/utils/gen/assets/assets.gen.dart'
     show Assets;
 
 class IconsPage extends StatefulWidget {
@@ -545,7 +545,7 @@ class _IconCard extends StatelessWidget {
                 ),
                 child: SvgPicture.asset(
                   icon.path, // ✅ آیکون درست
-                  package: 'vamstreet_components',
+                  package: 'vamstreet_uikit',
                   width: Dimens.px24,
                   height: Dimens.px24,
                   colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
@@ -619,7 +619,7 @@ class _IconDetailsSheet extends StatelessWidget {
                     icon.path,
                     width: Dimens.px64,
                     height: Dimens.px64,
-                    package: 'vamstreet_components',
+                    package: 'vamstreet_uikit',
                     colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
                   ),
                 ),

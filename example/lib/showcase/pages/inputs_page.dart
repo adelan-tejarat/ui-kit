@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/vamstreet_components.dart';
+import 'package:vamstreet_uikit/vamstreet_uikit.dart';
 
 class InputsPage extends StatefulWidget {
   const InputsPage({super.key});

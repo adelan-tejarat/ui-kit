@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/themes/radius.dart';
-import 'package:vamstreet_components/src/core/constants/dimens.dart';
-import 'package:vamstreet_components/src/core/themes/app_colors.dart';
+import 'package:vamstreet_uikit/src/core/themes/radius.dart';
+import 'package:vamstreet_uikit/src/core/constants/dimens.dart';
+import 'package:vamstreet_uikit/src/core/themes/app_colors.dart';
 
 class RadiusPage extends StatelessWidget {
   const RadiusPage({super.key});

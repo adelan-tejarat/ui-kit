@@ -1,4 +1,4 @@
-name: vamstreet_components_example
+name: vamstreet_uikit_example
 description: "Example application showcasing Vamstreet Components UI Kit"
 publish_to: 'none'
 version: 1.0.0+1
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg:
-  vamstreet_components:
+  vamstreet_uikit:
     path: ../
   flutter_gen_runner: ^5.3.1
   flutter_bloc: ^9.0.0

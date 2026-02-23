@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/features/buttons/core/button_size.dart' show ButtonSize;
-import 'package:vamstreet_components/src/features/buttons/core/button_styles.dart' show ButtonStyles;
+import 'package:vamstreet_uikit/src/features/buttons/core/button_size.dart' show ButtonSize;
+import 'package:vamstreet_uikit/src/features/buttons/core/button_styles.dart' show ButtonStyles;
 
 class ButtonWidgetStyle {
   final EdgeInsets padding;

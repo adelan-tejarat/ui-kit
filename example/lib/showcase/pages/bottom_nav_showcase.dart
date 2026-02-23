@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vamstreet_components/vamstreet_components.dart'
+import 'package:vamstreet_uikit/vamstreet_uikit.dart'
     show
         BottomNavItemType,
         BottomNavCubit,

@@ -1,6 +1,6 @@
 {
-    "name": "vamstreet_components",
-    "short_name": "vamstreet_components",
+    "name": "vamstreet_uikit",
+    "short_name": "vamstreet_uikit",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

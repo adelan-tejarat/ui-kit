@@ -1,7 +1,7 @@
 // example/lib/showcase/pages/toast_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/vamstreet_components.dart';
+import 'package:vamstreet_uikit/vamstreet_uikit.dart';
 
 class ToastPage extends StatefulWidget {
   const ToastPage({super.key});

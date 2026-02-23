@@ -1,9 +1,9 @@
 import 'dart:math' show pi, cos, sin;
 
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/constants/dimens.dart';
-import 'package:vamstreet_components/src/core/themes/app_colors.dart';
-import 'package:vamstreet_components/vamstreet_components.dart' show ButtonSize, AppTypography;
+import 'package:vamstreet_uikit/src/core/constants/dimens.dart';
+import 'package:vamstreet_uikit/src/core/themes/app_colors.dart';
+import 'package:vamstreet_uikit/vamstreet_uikit.dart' show ButtonSize, AppTypography;
 
 class VamstreetLoading extends StatefulWidget {
   final double size;

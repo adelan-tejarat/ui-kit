@@ -1,5 +1,5 @@
-name: vamstreet_components
-description: "The Vamstreet Component Library is a unified design system and modular codebase that powers both the Vamstreet Client application and Dashboard. This repository contains reusable UI components and design assets to maintain consistency across all Vamstreet products."
+name: vamstreet_uikit
+description: "The Vamstreet UiKit Library is a unified design system and modular codebase that powers both the Vamstreet Client application and Dashboard. This repository contains reusable UI components and design assets to maintain consistency across all Vamstreet products."
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 

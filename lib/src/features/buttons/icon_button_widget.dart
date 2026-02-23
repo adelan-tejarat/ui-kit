@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/themes/button_colors.dart';
-import 'package:vamstreet_components/src/features/buttons/core/button_size.dart'
+import 'package:vamstreet_uikit/src/core/themes/button_colors.dart';
+import 'package:vamstreet_uikit/src/features/buttons/core/button_size.dart'
     show ButtonSize;
-import 'package:vamstreet_components/src/features/buttons/core/public_button_style.dart'
+import 'package:vamstreet_uikit/src/features/buttons/core/public_button_style.dart'
     show ButtonWidgetStyle;
-import 'package:vamstreet_components/src/features/loading_widget.dart' show ButtonLoading;
+import 'package:vamstreet_uikit/src/features/loading_widget.dart' show ButtonLoading;
 
 class IconButtonWidget extends StatefulWidget {
   final IconData? icon;

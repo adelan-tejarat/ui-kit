@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:vamstreet_components/src/core/constants/dimens.dart';
-import 'package:vamstreet_components/src/core/themes/app_colors.dart';
-import 'package:vamstreet_components/src/core/themes/radius.dart';
-import 'package:vamstreet_components/src/core/themes/typography.dart';
-import 'package:vamstreet_components_example/showcase/pages/selectable_buttons_page.dart';
-import 'package:vamstreet_components_example/showcase/pages/toast_page.dart' show ToastPage;
+import 'package:vamstreet_uikit/src/core/constants/dimens.dart';
+import 'package:vamstreet_uikit/src/core/themes/app_colors.dart';
+import 'package:vamstreet_uikit/src/core/themes/radius.dart';
+import 'package:vamstreet_uikit/src/core/themes/typography.dart';
+import 'package:vamstreet_uikit_example/showcase/pages/selectable_buttons_page.dart';
+import 'package:vamstreet_uikit_example/showcase/pages/toast_page.dart' show ToastPage;
 
 // ایمپورت پیج‌ها
 import 'blur_page.dart';

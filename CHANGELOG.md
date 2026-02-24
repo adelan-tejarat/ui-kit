@@ -1,3 +1,21 @@
+## 2.1.0 — Button Icon Enhancement
+
+### 🚀 Feat
+- **feat(button):** enhance `ButtonWidget` with prefix/suffix icons support
+  - Add optional `prefixIcon` and `suffixIcon` parameters (IconData type)
+  - Add optional `iconSize` parameter with smart defaults based on button size
+  - Fix icon colors to properly inherit from button text style
+  - Update button color resolution logic
+
+### 🎨 Showcase
+- **update(buttons_page):** enhance showcase to demonstrate icon variations
+  - Add toggle to show/hide icon examples
+  - Display buttons with arrow icons (forward/backward) for enabled state
+  - Update legend to include icon button descriptions
+  - Improve layout to accommodate new button variations
+
+---
+
 ## 2.0.3 — Update Text Styles
 
 ### 🚀 Feat

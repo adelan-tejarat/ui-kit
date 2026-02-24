@@ -250,7 +250,7 @@ class ButtonColorPacks {
         foreground: AppColors.neutral500,
       ),
       focused: ButtonColorDetails(
-        background: AppColors.red700,
+        background: AppColors.red950,
         border: AppColors.red800,
         foreground: AppColors.white,
       ),
@@ -301,19 +301,19 @@ class ButtonColorPacks {
   static const neutral = _ButtonModeSet(
     filled: _ButtonStateSet(
       enabled: ButtonColorDetails(
-        background: AppColors.neutral800,
-        border: AppColors.neutral800,
+        background: AppColors.neutral500,
+        border: AppColors.neutral500,
         foreground: AppColors.white,
       ),
       hovered: ButtonColorDetails(
-        background: AppColors.neutral900,
-        border: AppColors.neutral900,
+        background: AppColors.neutral700,
+        border: AppColors.neutral700,
         foreground: AppColors.white,
       ),
       disabled: ButtonColorDetails(
-        background: AppColors.neutral300,
-        border: AppColors.neutral300,
-        foreground: AppColors.neutral500,
+        background: AppColors.neutral100,
+        border: AppColors.neutral100,
+        foreground: AppColors.neutral300,
       ),
       focused: ButtonColorDetails(
         background: AppColors.neutral900,
@@ -321,8 +321,8 @@ class ButtonColorPacks {
         foreground: AppColors.white,
       ),
       loading: ButtonColorDetails(
-        background: AppColors.neutral800,
-        border: AppColors.neutral800,
+        background: AppColors.neutral500,
+        border: AppColors.neutral500,
         foreground: AppColors.white,
       ),
     ),

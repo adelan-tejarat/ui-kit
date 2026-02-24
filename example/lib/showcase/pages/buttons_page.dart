@@ -21,6 +21,7 @@ class ButtonsPage extends StatefulWidget {
 
 class _ButtonsPageState extends State<ButtonsPage> {
   bool _showHoverStates = false;
+  bool _showIcons = true;
 
   @override
   Widget build(BuildContext context) {
@@ -31,40 +32,9 @@ class _ButtonsPageState extends State<ButtonsPage> {
         elevation: Dimens.px0,
         centerTitle: true,
         actions: [
-          Padding(
-            padding: const EdgeInsets.all(Dimens.px8),
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: () {
-                  setState(() {
-                    _showHoverStates = !_showHoverStates;
-                  });
-                },
-                borderRadius: AppRadius.lgAll,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: Dimens.px12,
-                    vertical: Dimens.px8,
-                  ),
-                  decoration: BoxDecoration(
-                    color: _showHoverStates
-                        ? const Color(AppColors.brand500)
-                        : const Color(AppColors.neutral200),
-                    borderRadius: AppRadius.lgAll,
-                  ),
-                  child: Text(
-                    'Show Hover: ${_showHoverStates ? 'ON' : 'OFF'}',
-                    style: AppTypography.textTheme.labelMedium?.copyWith(
-                      color: _showHoverStates
-                          ? const Color(AppColors.white)
-                          : const Color(AppColors.neutral700),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
+          _buildShowHoverToggle(),
+          const SizedBox(width: Dimens.px8),
+          _buildShowIconsToggle(),
         ],
       ),
       body: SingleChildScrollView(
@@ -75,9 +45,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
             _buildHeader(),
             const SizedBox(height: Dimens.px32),
 
-            // ======================================================
             // BUTTON WIDGET (متنی)
-            // ======================================================
             _buildSectionTitle('BUTTON WIDGET (Text Button)'),
             const SizedBox(height: Dimens.px16),
 
@@ -93,9 +61,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
 
             const Divider(height: Dimens.px32),
 
-            // ======================================================
             // ICON BUTTON WIDGET (آیکونی)
-            // ======================================================
             _buildSectionTitle('ICON BUTTON WIDGET (Icon Button)'),
             const SizedBox(height: Dimens.px16),
 
@@ -112,6 +78,93 @@ class _ButtonsPageState extends State<ButtonsPage> {
             const SizedBox(height: Dimens.px32),
             _buildLegend(),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildShowIconsToggle() {
+    return Padding(
+      padding: const EdgeInsets.all(Dimens.px8),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {
+            setState(() {
+              _showIcons = !_showIcons;
+            });
+          },
+          borderRadius: AppRadius.lgAll,
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: Dimens.px12,
+              vertical: Dimens.px8,
+            ),
+            decoration: BoxDecoration(
+              color: _showIcons
+                  ? const Color(AppColors.violet500)
+                  : const Color(AppColors.neutral200),
+              borderRadius: AppRadius.lgAll,
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  _showIcons ? Icons.visibility : Icons.visibility_off,
+                  size: Dimens.px16,
+                  color: _showIcons
+                      ? const Color(AppColors.white)
+                      : const Color(AppColors.neutral700),
+                ),
+                const SizedBox(width: Dimens.px4),
+                Text(
+                  'Icons: ${_showIcons ? 'ON' : 'OFF'}',
+                  style: AppTypography.textTheme.labelMedium?.copyWith(
+                    color: _showIcons
+                        ? const Color(AppColors.white)
+                        : const Color(AppColors.neutral700),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildShowHoverToggle() {
+    return Padding(
+      padding: const EdgeInsets.all(Dimens.px8),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {
+            setState(() {
+              _showHoverStates = !_showHoverStates;
+            });
+          },
+          borderRadius: AppRadius.lgAll,
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: Dimens.px12,
+              vertical: Dimens.px8,
+            ),
+            decoration: BoxDecoration(
+              color: _showHoverStates
+                  ? const Color(AppColors.brand500)
+                  : const Color(AppColors.neutral200),
+              borderRadius: AppRadius.lgAll,
+            ),
+            child: Text(
+              'Hover: ${_showHoverStates ? 'ON' : 'OFF'}',
+              style: AppTypography.textTheme.labelMedium?.copyWith(
+                color: _showHoverStates
+                    ? const Color(AppColors.white)
+                    : const Color(AppColors.neutral700),
+              ),
+            ),
+          ),
         ),
       ),
     );
@@ -144,7 +197,8 @@ class _ButtonsPageState extends State<ButtonsPage> {
                 '• ${ButtonSize.values.length} sizes (${ButtonSize.values.map((e) => e.name).join(', ')})\n'
                 '• ${ButtonMode.values.length} modes (${ButtonMode.values.map((e) => e.name).join(', ')})\n'
                 '• ${ColorPack.values.length} color packs (${ColorPack.values.map((e) => e.name).join(', ')})\n'
-                '• 4 states (Enabled, Disabled, Loading, Hover)',
+                '• 4 states (Enabled, Disabled, Loading, Hover)\n'
+                '• New: Prefix/Suffix icons support',
             style: AppTypography.textTheme.bodyLarge?.copyWith(
               color: Colors.white.withOpacity(0.9),
             ),
@@ -226,15 +280,12 @@ class _ButtonsPageState extends State<ButtonsPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Header ردیف‌ها - اصلاح شده
+        // Header ردیف‌ها
         IntrinsicHeight(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // فضای خالی برای هماهنگی با برچسب‌های ردیف
               const SizedBox(width: Dimens.px80 + Dimens.px8),
-
-              // هدرهای Mode
               for (final mode in ButtonMode.values) ...[
                 _buildModeHeader(mode, size),
                 if (mode != ButtonMode.values.last)
@@ -333,17 +384,16 @@ class _ButtonsPageState extends State<ButtonsPage> {
         break;
     }
 
-    // محاسبه عرض بر اساس سایز دکمه
     double buttonWidth;
     switch (size) {
       case ButtonSize.md:
-        buttonWidth = 107; // ButtonStyles.md.width
+        buttonWidth = 107;
         break;
       case ButtonSize.lg:
-        buttonWidth = 107; // ButtonStyles.lg.width
+        buttonWidth = 107;
         break;
       case ButtonSize.xlg:
-        buttonWidth = 107; // ButtonStyles.xlg.width
+        buttonWidth = 107;
         break;
     }
 
@@ -395,7 +445,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
     }
 
     return Container(
-      height: Dimens.px160,
+      height: Dimens.px320, // افزایش ارتفاع برای جای دادن دکمه‌های بیشتر
       padding: const EdgeInsets.all(Dimens.px8),
       decoration: BoxDecoration(
         color: color.withOpacity(0.05),
@@ -425,6 +475,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
       ) {
     return Column(
       children: [
+        // دکمه فعال معمولی
         ButtonWidget(
           text: 'فعال',
           colorPack: colorPack,
@@ -434,6 +485,33 @@ class _ButtonsPageState extends State<ButtonsPage> {
         ),
         const SizedBox(height: Dimens.px8),
 
+        // دکمه فعال با آیکون prefix (آیکون فلش به جلو)
+        if (_showIcons)
+          ButtonWidget(
+            text: 'بعدی',
+            colorPack: colorPack,
+            mode: mode,
+            size: size,
+            onPressed: () {},
+            suffixIcon: Icons.arrow_forward, // آیکون فلش به جلو
+            iconSize: 16,
+          ),
+        if (_showIcons) const SizedBox(height: Dimens.px8),
+
+        // دکمه فعال با آیکون suffix (آیکون فلش به عقب)
+        if (_showIcons)
+          ButtonWidget(
+            text: 'قبلی',
+            colorPack: colorPack,
+            mode: mode,
+            size: size,
+            onPressed: () {},
+            prefixIcon: Icons.arrow_back, // آیکون فلش به عقب
+            iconSize: 16,
+          ),
+        if (_showIcons) const SizedBox(height: Dimens.px8),
+
+        // دکمه غیرفعال
         ButtonWidget(
           text: 'غیرفعال',
           colorPack: colorPack,
@@ -443,6 +521,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
         ),
         const SizedBox(height: Dimens.px8),
 
+        // دکمه در حال بارگذاری
         ButtonWidget(
           text: 'در حال بارگذاری',
           colorPack: colorPack,
@@ -453,6 +532,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
         ),
         const SizedBox(height: Dimens.px8),
 
+        // دکمه هاور (اگر فعال باشد)
         if (_showHoverStates) ...[
           MouseRegion(
             child: ButtonWidget(
@@ -545,6 +625,7 @@ class _ButtonsPageState extends State<ButtonsPage> {
               runSpacing: Dimens.px12,
               children: [
                 _buildLegendItem('فعال', Icons.circle, const Color(AppColors.green500)),
+                _buildLegendItem('فعال + آیکون', Icons.arrow_forward, const Color(AppColors.green600)),
                 _buildLegendItem('غیرفعال', Icons.circle, const Color(AppColors.neutral400)),
                 _buildLegendItem('در حال بارگذاری', Icons.hourglass_empty, const Color(AppColors.amber600)),
                 _buildLegendItem('هاور', Icons.mouse, const Color(AppColors.violet500)),
@@ -560,7 +641,11 @@ class _ButtonsPageState extends State<ButtonsPage> {
               style: AppTypography.textTheme.bodySmall,
             ),
             Text(
-              '• هر بلوک ۴ حالت مختلف را نمایش می‌دهد',
+              '• دکمه‌های "بعدی" دارای آیکون suffix (فلش به جلو) هستند',
+              style: AppTypography.textTheme.bodySmall,
+            ),
+            Text(
+              '• دکمه‌های "قبلی" دارای آیکون prefix (فلش به عقب) هستند',
               style: AppTypography.textTheme.bodySmall,
             ),
           ],

@@ -1,3 +1,10 @@
+## 2.1.1 — Fix Svg Assets Address
+
+### 🚀 Feat
+- **fix:** Fix svg assets address in `pubspec.yaml`
+
+---
+
 ## 2.1.0 — Button Icon Enhancement
 
 ### 🚀 Feat

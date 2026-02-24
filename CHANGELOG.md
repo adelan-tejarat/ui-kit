@@ -1,3 +1,10 @@
+## 2.0.3 — Update Text Styles
+
+### 🚀 Feat
+- **update(typography):** update `TextStyle` values
+
+---
+
 ## 2.0.2 — Update Text Styles
 
 ### 🚀 Feat

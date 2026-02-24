@@ -36,7 +36,7 @@ class AppTypography {
   // text-4xl
   static const text4xl = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 40,
+    fontSize: 36,
     fontWeight: FontWeight.w700,
     height: 1.1,
   );
@@ -44,7 +44,7 @@ class AppTypography {
   // text-3xl
   static const text3xl = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 36,
+    fontSize: 30,
     fontWeight: FontWeight.w500,
     height: 1.2,
   );
@@ -52,7 +52,7 @@ class AppTypography {
   // text-2xl
   static const text2xl = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: FontWeight.w500,
     height: 1.2,
   );
@@ -60,7 +60,7 @@ class AppTypography {
   // text-xl
   static const textXl = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 28,
+    fontSize: 20,
     fontWeight: FontWeight.w500,
     height: 1.4,
   );
@@ -68,7 +68,7 @@ class AppTypography {
   // text-lg
   static const textLg = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 28,
+    fontSize: 18,
     fontWeight: FontWeight.w500,
     height: 1.55,
   );
@@ -76,7 +76,7 @@ class AppTypography {
   // text-base
   static const textBase = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 24,
+    fontSize: 16,
     fontWeight: FontWeight.w500,
     height: 1.33,
   );
@@ -84,7 +84,7 @@ class AppTypography {
   // text-sm
   static const textSm = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 20,
+    fontSize: 14,
     fontWeight: FontWeight.w500,
     height: 1.42,
   );
@@ -92,7 +92,7 @@ class AppTypography {
   // text-xs
   static const textXs = TextStyle(
     fontFamily: fontFamily,
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: FontWeight.w500,
     height: 1.33,
   );
@@ -123,21 +123,21 @@ class AppTypography {
     // text-4xl
     headlineLarge: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 40,
+      fontSize: 36,
       fontWeight: FontWeight.w700,
       height: 1.1,
     ),
     // text-3xl
     headlineMedium: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 36,
+      fontSize: 30,
       fontWeight: FontWeight.w500,
       height: 1.2,
     ),
     // text-2xl
     headlineSmall: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: FontWeight.w500,
       height: 1.2,
     ),
@@ -145,35 +145,35 @@ class AppTypography {
     // text-xl
     titleLarge: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 28,
+      fontSize: 20,
       fontWeight: FontWeight.w500,
       height: 1.4,
     ),
     // text-lg
     titleMedium: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 28,
+      fontSize: 18,
       fontWeight: FontWeight.w500,
       height: 1.55,
     ),
     // text-base
     titleSmall: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 24,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
       height: 1.33,
     ),
     // text-sm
     bodyLarge: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 20,
+      fontSize: 14,
       fontWeight: FontWeight.w500,
       height: 1.42,
     ),
     // text-xs
     bodyMedium: TextStyle(
       fontFamily: fontFamily,
-      fontSize: 16,
+      fontSize: 12,
       fontWeight: FontWeight.w500,
       height: 1.33,
     ),

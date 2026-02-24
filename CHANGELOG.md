@@ -1,3 +1,10 @@
+## 2.0.2 — Update Text Styles
+
+### 🚀 Feat
+- **feat(typography):** Add `TextStyle` values
+
+---
+
 ## 2.0.1 — Update Dimens - add spacings
 
 ### 🚀 Update

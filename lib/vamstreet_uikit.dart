@@ -26,6 +26,9 @@ export 'src/core/utils/gen/assets/assets.gen.dart';
 // BloC & Cubit
 export 'src/core/bloc/bottom_nav_cubit.dart';
 
+// Widgets
+export 'src/core/asset_loader_widget/svg_loader.dart';
+
 // Features
 export 'src/features/buttons/button_widget.dart';
 export 'src/features/buttons/icon_button_widget.dart';

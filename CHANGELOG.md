@@ -1,3 +1,10 @@
+## 2.1.2 — Use SvgLoaderAsset Widget for load Svg Assets
+
+### 🚀 Feat
+- **feat(core):** Add svg loader asset for support assets in this package and use in other projects
+
+---
+
 ## 2.1.1 — Fix Svg Assets Address
 
 ### 🚀 Feat
